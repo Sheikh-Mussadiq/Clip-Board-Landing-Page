@@ -13,7 +13,7 @@
 }
 body {
     min-height: 100vh;
-    overflow-x: hidden;
+    
     font-family: "Bai Jamjuree", sans-serif;
 }
 
@@ -84,8 +84,9 @@ picture {
 /* section-4 */
 
 .section-4 {
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
 }
 .section-4 article {
     padding: 4rem 2rem;
@@ -159,11 +160,14 @@ picture {
 
 .section-7 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 10rem 4rem;
+    margin: 10rem 4rem; 
 }
-
+.section-7 img {
+    margin: 2rem 1rem;  
+}
 /* section-8 */
 
 .section-8 {
@@ -183,12 +187,13 @@ picture {
 footer {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    max-width: 1200px;
-    margin: auto;
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: hsl(210, 10%, 33%, 0.1);
 }
 footer .logo {
     width: 4rem;
-    margin-top: 2rem;
+    margin: 2rem 6rem;
 }
 footer ul {
     margin-top: 2.5rem;
@@ -199,7 +204,7 @@ footer ul li {
   
 footer ul li button {
     background-color: transparent;
-    color: hsl(201, 11%, 66%);
+    color: var(--Dark-Grayish-Blue);
     font-size: 1rem;
     border: none;
     outline: none;
@@ -229,7 +234,7 @@ img {
 .attribution { 
     font-size: 11px; 
     text-align: center; 
-    margin: 2rem;
+    
 }
 .footer-attribution p {
     color: var(--Grayish-Blue);
@@ -251,4 +256,5 @@ img {
         align-items: center;
         justify-content: center;
     }
+    
 }
