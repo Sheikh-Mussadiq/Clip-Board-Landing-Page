@@ -1,7 +1,6 @@
-import htmlPurge from 'vite-plugin-purgecss'
+import htmlPurge from "vite-plugin-purgecss";
 
 export default {
-    plugins: [
-        htmlPurge(),
-    ]
-}
+  base: "/Clip-board-Landing-Page",
+  plugins: [htmlPurge()],
+};
