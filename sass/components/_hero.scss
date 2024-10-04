@@ -1,0 +1,8 @@
+@use "../abstracts/" as *;
+
+.hero {
+  padding-block: $hero-padding;
+  background-image: url("/images/bg-header-desktop.png");
+  background-size: cover;
+  background-position: center;
+}
